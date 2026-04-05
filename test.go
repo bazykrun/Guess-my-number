@@ -15,7 +15,7 @@ var randd = rand.Intn(100)
 func main() {
     
     flag.Parse() 
-    Sorter(randd, userNumb)
+    Sorter(randd)
     Ggame(userCount, *userNumb) 
 }
 
@@ -34,7 +34,7 @@ func Ggame(userCount int, userNumb int) {
 }
 
 func Sorter(rand_numb int) {
-    un := userNumb
+    un := *userNumb
     if un == 3 {
     start := (rand_numb / 10) * 10
     end := + 9
