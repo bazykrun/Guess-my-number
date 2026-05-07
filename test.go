@@ -41,3 +41,6 @@ func Sorter(rand_numb int) {
     fmt.Println(start, "-", end)
     }
 }
+
+
+
